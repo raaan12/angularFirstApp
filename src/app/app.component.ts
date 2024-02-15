@@ -12,4 +12,7 @@ export class AppComponent {
     this.deleteMessage = `Username '${this.username}' was deleted.`;
     this.username = '';
   }
-  }
+    getColor(){
+      return 'red';
+    }
+}
