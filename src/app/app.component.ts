@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   username= '' ;
+  deleteMessage: string = '';
+  deleteUsername() {
+    this.deleteMessage = `Username '${this.username}' was deleted.`;
+    this.username = '';
+  }
   }
