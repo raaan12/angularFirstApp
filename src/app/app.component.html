@@ -19,5 +19,5 @@
   (click)="OncreateStudent()">
   Add new Student
 </button>
-<p *ngFor="let student of students" > {{student}} </p>
+<p *ngFor="let student of students" [ngStyle]="{backgroundColor: getColor()}"> {{student}} </p>
 
