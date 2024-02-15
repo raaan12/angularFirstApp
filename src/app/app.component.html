@@ -19,5 +19,5 @@
   (click)="OncreateStudent()">
   Add new Student
 </button>
-<p *ngFor="let student of students" [ngStyle]="{backgroundColor: getColor()}"> {{student}} </p>
+<p *ngFor="let student of students; let i= index" [ngStyle]="{backgroundColor: getColor()}"> Student number {{i + 1 }} named {{student}} </p>
 
